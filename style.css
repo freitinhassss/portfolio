@@ -1,0 +1,15 @@
+*{ 
+    margin: 0;
+}
+#barralateral{ 
+    width: 22%; 
+    height: 100%;
+    background-color: #0A092B;
+    position: fixed;
+}
+#barraflex{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
