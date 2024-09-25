@@ -43,6 +43,10 @@ body{
 #home-page{
     background-image: linear-gradient(to bottom left, rgb(10, 9, 43), rgb(59, 57, 84));
     flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 #logo{ 
     margin-top: 10%;
@@ -50,6 +54,19 @@ body{
 }
 #myft1{ 
     margin-bottom: 5%;
+}
+#myft2 {
+    max-width:758px;
+    min-width: 100px;
+}
+.prazer{ 
+    font-size: 48px;
+}
+.nome{ 
+    font-size: 85px;
+}
+.desc{ 
+    font-size: 26px;
 }
 @media only screen and (max-width: 600px) {
 body{
@@ -63,4 +80,4 @@ position: relative;
     flex-grow: 0;
     height: 400px;
 }
-}
+} 
