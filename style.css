@@ -1,0 +1,145 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Oxanium", sans-serif;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom left, rgb(10, 9, 43), rgb(59, 57, 84));
+}
+#barralateral{ 
+    width: 22%; 
+    background-color: rgb(10, 9, 43);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+#barraflex{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#listflex{
+    align-items: center;
+}
+#nomebarra{ 
+    font-size: 32px;
+    color: #fff;
+}
+#dev{ 
+    font-size: 18px;
+    color: #3E819D;
+    padding-left: 25%;
+    padding-top: 2%;
+}
+#libarra{ 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 20%;
+}
+#home-page{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+#homeorganize{ 
+   padding-left: 10%;
+}
+#logo{ 
+    margin-top: 10%;
+    margin-bottom: 8%;
+}
+#myft1{ 
+    margin-bottom: 5%;
+}
+#myft2 {
+    max-width:758px;
+    min-width: 100px;
+}
+.prazer{ 
+    font-size: 48px;
+}
+.nome{ 
+    font-size: 85px;
+}
+.desc{ 
+    font-size: 26px;
+}
+#viewbtn{ 
+    background-color: rgb(59, 57, 84);
+    color: #fff;
+    border: solid 1px #fff;
+    margin-top: 15px;
+    font-size: 15px;
+    width: 40%;
+    height: 30px;
+}
+#about{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#abouttitle{ 
+    color: #fff;
+    font-size: 70px;
+    padding-left: 17%;
+    padding-bottom: 2%;
+    padding-top: 12%;
+}
+#textabout{ 
+    font-size: 25px;
+    color: #fff;
+    padding-left: 20%;
+}
+#skills{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+#textskills{ 
+    font-size: 20px;
+    color: #fff;
+    padding-left: 17%;
+}
+#iconsskills{ 
+    padding-left: 15%;
+}
+svg{ 
+    padding-top: 10%;
+    padding-left: 15%;
+    height: 100px;
+    width: 100px ;
+}
+@media only screen and (max-width: 1000px) {
+body{
+margin: 0;
+padding: 0;
+flex-direction: column;
+}
+#barralateral{
+width: 100%;
+position: relative;
+}
+#home-page{
+    flex-grow: 0;
+    height: 500px;
+}
+
+#myft2 {
+display: none;
+}
+} 
