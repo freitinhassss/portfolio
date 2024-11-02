@@ -14,17 +14,12 @@ body {
     transition: background-color 0.5s, color 0.5s;
 }
 
-/* Estilos para o modo escuro */
+
 .dark-mode {
     background-image: linear-gradient(to right, #3B3954 , #0A092B);
     color: #e0e0e0;
 }
-.white-mode{ 
-    background-image: linear-gradient(to right, #3B3954 , #0A092B);
-    color: black;
-}
 
-/* Estilo do botão */
 #toggleMode {
     padding: 10px;
     background-color: #f0f0f0;
