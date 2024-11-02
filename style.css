@@ -4,30 +4,40 @@
     list-style: none;
     font-family: "Oxanium", sans-serif;
 }
-body.dark-mode .sidebar {
-    background-color: #0e1635;
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Oxanium', sans-serif;
+    transition: background-color 0.5s, color 0.5s;
 }
 
-body.dark-mode .main-content {
-    background-color: #131a35;
+/* Estilos para o modo escuro */
+.dark-mode {
+    background-image: linear-gradient(to right, #3B3954 , #0A092B);
+    color: #e0e0e0;
+}
+.white-mode{ 
+    background-image: linear-gradient(to right, #3B3954 , #0A092B);
+    color: black;
 }
 
-body.dark-mode .project-box {
-    background-color: #1a1a2e;
+/* Estilo do botão */
+#toggleMode {
+    padding: 10px;
+    background-color: #f0f0f0;
+    --text: black;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.5s;
 }
 
-body.dark-mode form input, 
-body.dark-mode form textarea {
-    background-color: #1a1a2e;
-}
-
-body.dark-mode form button {
-    background-color: #005a8e;
-}
-body{
-    display: flex;
-    flex-wrap: wrap;
-    background-image: linear-gradient(to bottom left, rgb(10, 9, 43), rgb(59, 57, 84));
+.dark-mode #toggleMode {
+    background-color: #333;
+    color: white;
 }
 html{
     --background: white;
@@ -66,12 +76,13 @@ html{
     padding-left: 25%;
     padding-top: 2%;
 }
-#libarra{ 
-    color: #fff;
+.libarra a{ 
+    color: #ffffff;
     display: flex;
     justify-content: center;
     font-size: 20px;
     padding-top: 20%;
+    text-decoration: none;
 }
 #home-page{
     flex-grow: 1;
@@ -171,14 +182,19 @@ svg{
     padding-top: 1%;
 }
 .container {
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     max-width: 1200px;
-    padding: 20px;
+    padding-left: 32.5%;
+    padding-top: 5%;
 }
 
 .contact-info {
+    display: flex;
+    flex-direction: column;
     width: 40%;
 }
 
@@ -202,11 +218,14 @@ svg{
 
 .contact-form {
     width: 50%;
+    padding-top: 5%;
+    padding-left: 27%;
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
+    
 }
 
 .contact-form label {
@@ -261,22 +280,53 @@ svg{
     width: 30px;
     height: 30px;
 }
-@media only screen and (max-width: 1000px) {
-body{
-margin: 0;
-padding: 0;
-flex-direction: column;
-}
-#barralateral{
-width: 100%;
-position: relative;
-}
-#home-page{
-    flex-grow: 0;
-    height: 500px;
-}
+@media (max-width: 1000px) {
+        #barralateral{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        }
+        #myft2 {
+        display: none;
+        }
 
-#myft2 {
-display: none;
+    #homeorganize{ 
+        padding-top: 5%;
+    }
+    #textabout,
+    #textskills {
+        padding-left: 3%;
+    }
+
+    #abouttitle {
+        font-size: 40px;
+        padding-left: 3%;
+    }
+
+    .prazer {
+        font-size: 36px;
+    }
+
+    .nome {
+        font-size: 50px;
+    }
+
+    .desc {
+        font-size: 20px;
+    }
+
+    #viewbtn {
+        width: 80%;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+        padding: 0;
+    }
+
+    .social-icons a img {
+        width: 20px;
+        height: 20px;
+    }
 }
-} 

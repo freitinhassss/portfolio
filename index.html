@@ -9,26 +9,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
+<title>Document</title>
 </head>
 <body>
         <div id="barralateral">
         <div id="barraflex">
             <button id="toggleMode" onclick="toggleDarkMode()">Alternar Modo</button>
-            <span id="logo"><img src="image 1.png" max-height="79px" max-width="216px"></span>
-            <span id="myft1"><img src="image.png" max-height="265px" max-width="264px"></span>
-          <ul id="listflex">
-            <li id="nomebarra">Henrique Freitas</li>
-            <li id="dev">Dev. Front End</li>
-            <li id="libarra">HOME</li>
-            <li id="libarra">ABOUT ME</li>
-            <li id="libarra">SKILLS</li>
-            <li id="libarra">CONTACT</li>
-          </ul>
+            <span id="logo"><img src="image 1.png" height="79px" width="216px"></span>
+            <span id="myft1"><img src="image.png" height="265px" width="264px"></span>
+            <ul id="listflex">
+                <li id="nomebarra">Henrique Freitas</li>
+                <li id="dev">Dev. Front End</li>
+                <li class="libarra"><a href="#home-page" onclick="highlightMenu(this)">HOME</a></li>
+                <li class="libarra"><a href="#about" onclick="highlightMenu(this)">ABOUT ME</a></li>
+                <li class="libarra"><a href="#skills" onclick="highlightMenu(this)">SKILLS</a></li>
+                <li class="libarra"><a href="#contact" onclick="highlightMenu(this)">CONTACT</a></li>
+            </ul>
         </div>
     </div>
     <div id="home-page">
+
             <div id="homeorganize">
             <span class="prazer">Prazer,</span><br>
             <span class="nome">Henrique</span><br>
@@ -42,7 +42,7 @@
     </div>
     <div id="about">
     <a id="abouttitle">ABOUT ME</a>
-    <a id="textabout">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In <br>consectetur, lorem vel pharetra dictum, lacus eros <br>convallis ante, vitae sollicitudin augue nulla non ex. <br>Maecenas semper magna sit amet lectus suscipit, id <br> interdum risus interdum. Ut quis risus orci. Aenean <br>eleifend tortor et fermentum dapibus. Sed vitae <br>
+    <a id="textabout">Sou desenvolvedor full-stack com especialização tanto em <br>desenvolvimento front-end quanto em back-end, apaixonado <br> por transformar ideias em experiências digitais completas. <br>Com experiência em criar soluções responsivas, dinâmicas <br>e escaláveis, meu objetivo é garantir que as aplicações ofereçam <br>desempenho, segurança e uma experiência de usuário intuitiva.
     </a>
     </div>
     <div id="skills">
@@ -57,14 +57,15 @@
         <a id="abouttitle">PROJETOS</a>
     </div>
     <div class="container">
-        <div class="contact-info">
-            <h1>CONTATO</h1>
-            <p>Telefone: (+55) 31 99775-6990</p>
-            <p>Email: iquefissa@gmail.com</p>
-            <p>Instagram: @h.freitasx</p>
-            <p>GitHub: <a href="https://github.com/freitinhassss" target="_blank">https://github.com/freitinhassss</a></p>
+        <div id="skills">
+            <div class="contact-info">
+                <h1 id="abouttitle">CONTATO</h1>
+                <p id="textskills">Telefone: (+55) 31 99775-6990</p>
+                <p id="textskills">Email: iquefissa@gmail.com</p>
+                <p id="textskills">Instagram: @h.freitasx</p>
+                <p id="textskills">GitHub: <a href="https://github.com/freitinhassss" target="_blank">https://github.com/freitinhassss</a></p>
+            </div>
         </div>
-
         <div class="contact-form">
             <form>
                 <label for="name">Nome:</label>
@@ -84,11 +85,5 @@
         </div>
     </div>
 
-    <div class="social-icons">
-        <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
-        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-    </div>
 </body>
 </html>
